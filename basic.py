@@ -95,13 +95,9 @@ def root():
     </html>
     """
 
-@router.get("/add")
-def add(a : int, b : int):
-    return{"result": a + b}
-
-@router.get("/minus")
-def aminus(a : int, b : int):
-    return{"result": a - b}
+@router.get("/multi")
+def multiply(a : int, b : int):
+    return {"result": a * b}
 
 @router.post("/item")
 def create(item: Item):
